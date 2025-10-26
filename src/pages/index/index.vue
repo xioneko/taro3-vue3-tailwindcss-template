@@ -1,7 +1,7 @@
 <template>
   <SafeArea class="flex flex-col items-center justify-center">
     <view class="text-red-500"> 欢迎使用 NutUI 开发 Taro <Dongdong /> </view>
-    <view>{{ count }}</view>
+    <view v-html="count"></view>
     <view>
       <nut-button type="primary" @click="handleClick"> Count++ </nut-button>
     </view>
